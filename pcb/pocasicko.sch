@@ -221,17 +221,6 @@ F 3 "" H 6100 2400 50  0001 C CNN
 	1    6100 2400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 5DA926E8
-P 6100 3000
-F 0 "#PWR0113" H 6100 2850 50  0001 C CNN
-F 1 "+3.3V" H 6042 3037 50  0000 R CNN
-F 2 "" H 6100 3000 50  0001 C CNN
-F 3 "" H 6100 3000 50  0001 C CNN
-	1    6100 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6150 2400 6100 2400
 Wire Wire Line
@@ -250,16 +239,7 @@ Wire Wire Line
 	3900 1600 4000 1600
 Wire Wire Line
 	4000 1600 4000 1650
-Wire Wire Line
-	4000 1600 4050 1600
-Wire Wire Line
-	4100 1600 4100 1650
 Connection ~ 4000 1600
-Wire Wire Line
-	4100 1600 4200 1600
-Wire Wire Line
-	4200 1600 4200 1650
-Connection ~ 4100 1600
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5DA9B4ED
@@ -272,9 +252,6 @@ F 4 "DEBUG_SWD" H 918 3675 50  0000 C CNN "Comment"
 	1    1000 3350
 	-1   0    0    -1  
 $EndComp
-Connection ~ 4050 1600
-Wire Wire Line
-	4050 1600 4100 1600
 $Comp
 L Device:C C3
 U 1 1 5DA9F30F
@@ -348,9 +325,9 @@ Wire Wire Line
 	3350 1550 3350 1500
 Connection ~ 3350 1500
 Wire Wire Line
-	3350 1100 4050 1100
+	3350 1100 4000 1100
 Wire Wire Line
-	4050 1100 4050 1600
+	4000 1100 4000 1600
 Connection ~ 3350 1100
 Wire Wire Line
 	2300 3800 2300 3750
@@ -830,7 +807,7 @@ VSH
 Text Label 8850 5750 2    50   ~ 0
 VDD
 Text Label 9450 5750 2    50   ~ 0
-VCI
+VPP
 Text Label 10050 5750 2    50   ~ 0
 VGH
 Text Label 10650 5750 2    50   ~ 0
@@ -1553,8 +1530,8 @@ $Comp
 L RF_Module:CMWX1ZZABZ-091 U1
 U 1 1 5D9B77DF
 P 4100 3150
-F 0 "U1" H 4500 4700 50  0000 C CNN
-F 1 "CMWX1ZZABZ-091" H 4800 4600 50  0000 C CNN
+F 0 "U1" H 5000 4500 50  0000 C CNN
+F 1 "CMWX1ZZABZ-091" H 5300 4400 50  0000 C CNN
 F 2 "RF_Module:CMWX1ZZABZ" H 4100 3150 50  0001 C CNN
 F 3 "https://wireless.murata.com/RFM/data/type_abz.pdf" H 6550 1650 50  0001 C CNN
 	1    4100 3150
@@ -1803,4 +1780,87 @@ Wire Wire Line
 Connection ~ 1800 3550
 Wire Wire Line
 	1800 3550 2300 3550
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DB2322A
+P 6750 750
+F 0 "H1" H 6850 799 50  0000 L CNN
+F 1 "M3_Hole" H 6600 950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6750 750 50  0001 C CNN
+F 3 "~" H 6750 750 50  0001 C CNN
+	1    6750 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DB28280
+P 7100 750
+F 0 "H2" H 7200 799 50  0000 L CNN
+F 1 "M3_Hole" H 6950 950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 7100 750 50  0001 C CNN
+F 3 "~" H 7100 750 50  0001 C CNN
+	1    7100 750 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6750 850 
+NoConn ~ 7100 850 
+$Comp
+L Device:C C20
+U 1 1 5DB46E30
+P 4750 1300
+F 0 "C20" H 4635 1254 50  0000 R CNN
+F 1 "1uF" H 4635 1345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4788 1150 50  0001 C CNN
+F 3 "~" H 4750 1300 50  0001 C CNN
+	1    4750 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+2V5 #PWR0141
+U 1 1 5DB4AB34
+P 4750 1050
+F 0 "#PWR0141" H 4750 900 50  0001 C CNN
+F 1 "+2V5" H 4765 1223 50  0000 C CNN
+F 2 "" H 4750 1050 50  0001 C CNN
+F 3 "" H 4750 1050 50  0001 C CNN
+	1    4750 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1150 4750 1100
+$Comp
+L power:GND #PWR0142
+U 1 1 5DB4AFE6
+P 4750 1500
+F 0 "#PWR0142" H 4750 1250 50  0001 C CNN
+F 1 "GND" H 4900 1450 50  0000 C CNN
+F 2 "" H 4750 1500 50  0001 C CNN
+F 3 "" H 4750 1500 50  0001 C CNN
+	1    4750 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1500 4750 1450
+Wire Wire Line
+	4750 1100 4200 1100
+Connection ~ 4750 1100
+Wire Wire Line
+	4750 1100 4750 1050
+Wire Wire Line
+	4200 1100 4200 1650
+Wire Wire Line
+	4100 1650 4100 1600
+Wire Wire Line
+	4100 1600 4000 1600
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5DB52717
+P 6100 3000
+F 0 "#PWR?" H 6100 2850 50  0001 C CNN
+F 1 "+2V5" H 6042 3037 50  0000 R CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
