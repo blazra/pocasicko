@@ -72,7 +72,7 @@ U 1 1 5D9CCC62
 P 6050 4450
 F 0 "J1" H 6150 4425 50  0000 L CNN
 F 1 "SMA" H 6150 4334 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Molex_73251-1153_EdgeMount_Horizontal" H 6050 4450 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount" H 6050 4450 50  0001 C CNN
 F 3 " ~" H 6050 4450 50  0001 C CNN
 F 4 "Antenna" H 6150 4250 50  0000 L CNN "Comment"
 	1    6050 4450
