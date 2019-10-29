@@ -47,7 +47,7 @@ L Switch:SW_Push SW1
 U 1 1 5D9CAE13
 P 2300 4000
 F 0 "SW1" V 2300 4148 50  0000 L CNN
-F 1 "SW_Push" H 2300 4200 50  0001 C CNN
+F 1 "RESET" H 2300 4200 50  0001 C CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 2300 4200 50  0001 C CNN
 F 3 "~" H 2300 4200 50  0001 C CNN
 F 4 "RESET" H 2300 4000 50  0001 C CNN "Comment"
@@ -543,10 +543,6 @@ Text Label 10800 3300 2    50   ~ 0
 VGL
 Text Label 10800 3400 2    50   ~ 0
 VGH
-Text Label 10800 3500 2    50   ~ 0
-TSCL
-Text Label 10800 3600 2    50   ~ 0
-TSDA
 Text Label 10800 3700 2    50   ~ 0
 BS1
 Text Label 10800 3800 2    50   ~ 0
@@ -1487,12 +1483,8 @@ Wire Wire Line
 	10150 3700 10200 3700
 Wire Wire Line
 	10500 3700 10850 3700
-Wire Wire Line
-	10550 3500 10850 3500
-Wire Wire Line
-	10550 3600 10850 3600
-NoConn ~ 10550 3500
-NoConn ~ 10550 3600
+NoConn ~ 10850 3500
+NoConn ~ 10850 3600
 NoConn ~ 10850 3000
 $Comp
 L Device:R R7
@@ -1537,7 +1529,6 @@ F 3 "https://wireless.murata.com/RFM/data/type_abz.pdf" H 6550 1650 50  0001 C C
 	1    4100 3150
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3200 4050
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5DB44594
@@ -1577,7 +1568,7 @@ Wire Wire Line
 	2400 2950 2400 2350
 Wire Wire Line
 	2400 2350 1200 2350
-Text Label 3100 3750 3    50   ~ 0
+Text Label 3150 3750 2    50   ~ 0
 TCXO_OUT
 Text Label 1250 2350 0    50   ~ 0
 USART1_RX
@@ -1853,14 +1844,57 @@ Wire Wire Line
 Wire Wire Line
 	4100 1600 4000 1600
 $Comp
-L power:+2V5 #PWR?
+L power:+2V5 #PWR0113
 U 1 1 5DB52717
 P 6100 3000
-F 0 "#PWR?" H 6100 2850 50  0001 C CNN
+F 0 "#PWR0113" H 6100 2850 50  0001 C CNN
 F 1 "+2V5" H 6042 3037 50  0000 R CNN
 F 2 "" H 6100 3000 50  0001 C CNN
 F 3 "" H 6100 3000 50  0001 C CNN
 	1    6100 3000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP11
+U 1 1 5DB8A516
+P 3150 2750
+F 0 "TP11" V 3150 2950 50  0000 L CNN
+F 1 "PA8" V 3150 3150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3350 2750 50  0001 C CNN
+F 3 "~" H 3350 2750 50  0001 C CNN
+	1    3150 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 2750 3200 2750
+$Comp
+L Connector:TestPoint TP13
+U 1 1 5DB8AFB2
+P 5050 2550
+F 0 "TP13" V 5050 2750 50  0000 L CNN
+F 1 "PB7" V 5050 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 2550 50  0001 C CNN
+F 3 "~" H 5250 2550 50  0001 C CNN
+	1    5050 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2550 5050 2550
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5DB8B425
+P 3150 4050
+F 0 "TP12" V 3200 4200 50  0000 L CNN
+F 1 "PH1" V 3050 4150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3350 4050 50  0001 C CNN
+F 3 "~" H 3350 4050 50  0001 C CNN
+	1    3150 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 4050 3200 4050
+Text Notes 10600 3500 0    50   ~ 0
+TSCL
+Text Notes 10600 3600 0    50   ~ 0
+TSDA
 $EndSCHEMATC
