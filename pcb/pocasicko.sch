@@ -108,34 +108,34 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5DA410D3
-P 6750 3400
-F 0 "#PWR0104" H 6750 3150 50  0001 C CNN
-F 1 "GND" H 6755 3227 50  0000 C CNN
-F 2 "" H 6750 3400 50  0001 C CNN
-F 3 "" H 6750 3400 50  0001 C CNN
-	1    6750 3400
+P 6750 3750
+F 0 "#PWR0104" H 6750 3500 50  0001 C CNN
+F 1 "GND" H 6755 3577 50  0000 C CNN
+F 2 "" H 6750 3750 50  0001 C CNN
+F 3 "" H 6750 3750 50  0001 C CNN
+	1    6750 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6650 3300 6650 3350
+	6650 3650 6650 3700
 Wire Wire Line
-	6650 3350 6750 3350
+	6650 3700 6750 3700
 Wire Wire Line
-	6750 3350 6750 3400
+	6750 3700 6750 3750
 Wire Wire Line
-	6750 3350 6850 3350
+	6750 3700 6850 3700
 Wire Wire Line
-	6850 3350 6850 3300
-Connection ~ 6750 3350
+	6850 3700 6850 3650
+Connection ~ 6750 3700
 Wire Wire Line
-	6650 2100 6650 2050
+	6650 2450 6650 2400
 Wire Wire Line
-	6650 2050 6750 2050
+	6650 2400 6750 2400
 Wire Wire Line
-	6750 2050 6850 2050
+	6750 2400 6850 2400
 Wire Wire Line
-	6850 2050 6850 2100
-Connection ~ 6750 2050
+	6850 2400 6850 2450
+Connection ~ 6750 2400
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5DA514FB
@@ -183,12 +183,12 @@ $EndComp
 $Comp
 L Sensor:BME680 U2
 U 1 1 5DA52ABC
-P 6750 2700
-F 0 "U2" H 6550 2250 50  0000 R CNN
-F 1 "BME680" H 6550 2150 50  0000 R CNN
-F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 8200 2250 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 6750 2500 50  0001 C CNN
-	1    6750 2700
+P 6750 3050
+F 0 "U2" H 6550 2600 50  0000 R CNN
+F 1 "BME680" H 6550 2500 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering" H 8200 2600 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" H 6750 2850 50  0001 C CNN
+	1    6750 3050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -210,29 +210,8 @@ Wire Wire Line
 	1200 3350 1500 3350
 Wire Wire Line
 	2300 4200 2300 4250
-$Comp
-L power:GND #PWR0112
-U 1 1 5DA92340
-P 6100 2400
-F 0 "#PWR0112" H 6100 2150 50  0001 C CNN
-F 1 "GND" H 6022 2363 50  0000 R CNN
-F 2 "" H 6100 2400 50  0001 C CNN
-F 3 "" H 6100 2400 50  0001 C CNN
-	1    6100 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6150 2400 6100 2400
-Wire Wire Line
-	6150 3000 6100 3000
-Wire Wire Line
-	6100 2650 6100 2600
-Wire Wire Line
-	6100 2600 6150 2600
-Wire Wire Line
-	6100 2750 6100 2800
-Wire Wire Line
-	6100 2800 6150 2800
+	6150 2750 6050 2750
 Wire Wire Line
 	3900 1650 3900 1600
 Wire Wire Line
@@ -377,34 +356,34 @@ Wire Wire Line
 $Comp
 L Device:C C11
 U 1 1 5DAB3810
-P 7050 1900
-F 0 "C11" H 6935 1854 50  0000 R CNN
-F 1 "100nF" H 6935 1945 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 1750 50  0001 C CNN
-F 3 "~" H 7050 1900 50  0001 C CNN
-	1    7050 1900
+P 7050 2250
+F 0 "C11" H 6935 2204 50  0000 R CNN
+F 1 "100nF" H 6935 2295 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 2100 50  0001 C CNN
+F 3 "~" H 7050 2250 50  0001 C CNN
+	1    7050 2250
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5DAB4862
-P 7050 2100
-F 0 "#PWR0105" H 7050 1850 50  0001 C CNN
-F 1 "GND" H 7200 2050 50  0000 C CNN
-F 2 "" H 7050 2100 50  0001 C CNN
-F 3 "" H 7050 2100 50  0001 C CNN
-	1    7050 2100
+P 7050 2450
+F 0 "#PWR0105" H 7050 2200 50  0001 C CNN
+F 1 "GND" H 7200 2400 50  0000 C CNN
+F 2 "" H 7050 2450 50  0001 C CNN
+F 3 "" H 7050 2450 50  0001 C CNN
+	1    7050 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 2050 6750 1750
-Connection ~ 6750 1750
+	6750 2400 6750 2100
+Connection ~ 6750 2100
 Wire Wire Line
-	6750 1750 6750 1700
+	6750 2100 6750 2050
 Wire Wire Line
-	7050 2050 7050 2100
+	7050 2400 7050 2450
 Wire Wire Line
-	7050 1750 6750 1750
+	7050 2100 6750 2100
 Text Notes 5200 4650 0    50   Italic 0
 50 Ohm\nimpedance
 $Comp
@@ -552,11 +531,11 @@ RES#
 Text Label 10800 4000 2    50   ~ 0
 D{slash}C#
 Text Label 10800 4100 2    50   ~ 0
-CS#
+DISP_NSS
 Text Label 10800 4200 2    50   ~ 0
 SCLK
 Text Label 10800 4300 2    50   ~ 0
-SDI
+MOSI
 Text Label 10800 4400 2    50   ~ 0
 VDDIO
 $Comp
@@ -618,10 +597,6 @@ Wire Wire Line
 	10850 5200 10800 5200
 Wire Wire Line
 	10850 5300 10800 5300
-Text Label 5350 2650 0    50   ~ 0
-BME680_SCL
-Text Label 5350 2750 0    50   ~ 0
-BME680_SDA
 $Comp
 L Device:C C10
 U 1 1 5DAEB217
@@ -889,12 +864,12 @@ $EndComp
 $Comp
 L power:+2V5 #PWR0122
 U 1 1 5DAE1353
-P 6750 1700
-F 0 "#PWR0122" H 6750 1550 50  0001 C CNN
-F 1 "+2V5" H 6765 1873 50  0000 C CNN
-F 2 "" H 6750 1700 50  0001 C CNN
-F 3 "" H 6750 1700 50  0001 C CNN
-	1    6750 1700
+P 6750 2050
+F 0 "#PWR0122" H 6750 1900 50  0001 C CNN
+F 1 "+2V5" H 6765 2223 50  0000 C CNN
+F 2 "" H 6750 2050 50  0001 C CNN
+F 3 "" H 6750 2050 50  0001 C CNN
+	1    6750 2050
 	1    0    0    -1  
 $EndComp
 Connection ~ 900  6300
@@ -1254,10 +1229,6 @@ $EndComp
 Wire Wire Line
 	9550 4900 9550 4950
 Wire Wire Line
-	5000 2650 6100 2650
-Wire Wire Line
-	5000 2750 6100 2750
-Wire Wire Line
 	9550 4500 9650 4500
 Connection ~ 9550 4500
 Text Label 9650 4500 0    50   ~ 0
@@ -1315,19 +1286,13 @@ Wire Wire Line
 Text Label 5050 2250 0    50   ~ 0
 D{slash}C#
 Text Label 5050 2850 0    50   ~ 0
-CS#
+DISP_NSS
 Text Label 5050 2450 0    50   ~ 0
 RES#
 Text Label 5050 2950 0    50   ~ 0
 SCLK
-Wire Wire Line
-	5000 2950 5050 2950
 Text Label 5050 3150 0    50   ~ 0
-SDI
-Wire Wire Line
-	5000 3150 5050 3150
-Wire Wire Line
-	5000 2850 5050 2850
+MOSI
 Text Label 5050 2350 0    50   ~ 0
 BUSY
 Wire Wire Line
@@ -1706,19 +1671,6 @@ Text Label 10300 1150 2    50   ~ 0
 LED
 Wire Wire Line
 	10300 1150 10300 1200
-$Comp
-L Connector:TestPoint TP10
-U 1 1 5DB68EB6
-P 5050 3050
-F 0 "TP10" V 5050 3250 50  0000 L CNN
-F 1 "PB14" V 5050 3450 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 3050 50  0001 C CNN
-F 3 "~" H 5250 3050 50  0001 C CNN
-	1    5050 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 3050 5050 3050
 Text Label 9200 1100 2    50   ~ 0
 BUTTON_A
 Text Label 9200 1500 2    50   ~ 0
@@ -1774,27 +1726,27 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5DB2322A
-P 6750 750
-F 0 "H1" H 6850 799 50  0000 L CNN
-F 1 "M3_Hole" H 6600 950 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6750 750 50  0001 C CNN
-F 3 "~" H 6750 750 50  0001 C CNN
-	1    6750 750 
+P 6300 7550
+F 0 "H1" H 6400 7599 50  0000 L CNN
+F 1 "M3_Hole" H 6150 7750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6300 7550 50  0001 C CNN
+F 3 "~" H 6300 7550 50  0001 C CNN
+	1    6300 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5DB28280
-P 7100 750
-F 0 "H2" H 7200 799 50  0000 L CNN
-F 1 "M3_Hole" H 6950 950 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 7100 750 50  0001 C CNN
-F 3 "~" H 7100 750 50  0001 C CNN
-	1    7100 750 
+P 6650 7550
+F 0 "H2" H 6750 7599 50  0000 L CNN
+F 1 "M3_Hole" H 6500 7750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6650 7550 50  0001 C CNN
+F 3 "~" H 6650 7550 50  0001 C CNN
+	1    6650 7550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6750 850 
-NoConn ~ 7100 850 
+NoConn ~ 6300 7650
+NoConn ~ 6650 7650
 $Comp
 L Device:C C20
 U 1 1 5DB46E30
@@ -1844,17 +1796,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 1600 4000 1600
 $Comp
-L power:+2V5 #PWR0113
-U 1 1 5DB52717
-P 6100 3000
-F 0 "#PWR0113" H 6100 2850 50  0001 C CNN
-F 1 "+2V5" H 6042 3037 50  0000 R CNN
-F 2 "" H 6100 3000 50  0001 C CNN
-F 3 "" H 6100 3000 50  0001 C CNN
-	1    6100 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP11
 U 1 1 5DB8A516
 P 3150 2750
@@ -1897,4 +1838,37 @@ Text Notes 10600 3500 0    50   ~ 0
 TSCL
 Text Notes 10600 3600 0    50   ~ 0
 TSDA
+Text Label 5050 3050 0    50   ~ 0
+MISO
+Wire Wire Line
+	5000 2950 6150 2950
+Wire Wire Line
+	5000 3150 6150 3150
+Wire Wire Line
+	5000 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 2750
+Wire Wire Line
+	5000 2850 5050 2850
+Text Label 5050 2650 0    50   ~ 0
+BME_NSS
+Wire Wire Line
+	5900 2650 5900 3350
+Wire Wire Line
+	5900 3350 6150 3350
+Wire Wire Line
+	5000 2650 5900 2650
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5DB9D4A0
+P 5050 2750
+F 0 "TP10" V 5050 2950 50  0000 L CNN
+F 1 "PB9" V 5050 3150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5250 2750 50  0001 C CNN
+F 3 "~" H 5250 2750 50  0001 C CNN
+	1    5050 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2750 5050 2750
 $EndSCHEMATC
