@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pocasicko"
-Date "2019-10-14"
+Date "2019-11-02"
 Rev "1"
 Comp "Radovan Blažek"
 Comment1 ""
