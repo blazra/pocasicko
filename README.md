@@ -8,7 +8,6 @@ LoRa node with e-paper display and BME680
 
 [Schematic](./pcb/revision_1/pocasicko-schematic.pdf)
 
-Inline-style: 
 ![Front pcb render](./pcb/revision_1/render-top.png)
 ![Back pcb render](./pcb/revision_1/render-bottom.png)
 
